@@ -1,0 +1,36 @@
+<div class="vh-100 vw-100 bg-secondary">
+  <div class="w-25 pt-5 mx-auto fw-bold">
+    <div class="w-50 mx-auto bg-light text-end">
+        <div class="p-3"><input type="text" class="w-100 fs-2 form-control border-0 shadow-none text-end text-danger" [(ngModel)]="operador"></div>
+        <div class="p-3"><p class="w-100 fs-2 form-control border-0 shadow-none bg-light text-end text-danger">{{resultado}}</p></div>
+    </div>
+    <div class="w-50 mx-auto bg-danger text-light d-flex flex-row text-center justify-content-between">
+        <div class="col-3">
+            <div class="h-25"><button (click)="addNum('9')" class="w-100 h-100 btn btn-danger">9</button></div>
+            <div class="h-25"><button (click)="addNum('6')" class="w-100 h-100 btn btn-danger">6</button></div>
+            <div class="h-25"><button (click)="addNum('3')" class="w-100 h-100 btn btn-danger">3</button></div>
+            <div class="h-25"><button (click)="addOperador('.')" class="w-100 h-100 btn btn-danger">.</button></div>
+        </div>
+        <div class="col-3">
+            <div class="h-25"><button (click)="addNum('8')" class="w-100 h-100 btn btn-danger">8</button></div>
+            <div class="h-25"><button (click)="addNum('5')" class="w-100 h-100 btn btn-danger">5</button></div>
+            <div class="h-25"><button (click)="addNum('2')" class="w-100 h-100 btn btn-danger">2</button></div>
+            <div class="h-25"><button (click)="addNum('0')" class="w-100 h-100 btn btn-danger">0</button></div>
+        </div>
+        <div class="col-3">
+            <div class="h-25"><button (click)="addNum('7')" class="w-100 h-100 btn btn-danger">7</button></div>
+            <div class="h-25"><button (click)="addNum('4')" class="w-100 h-100 btn btn-danger">4</button></div>
+            <div class="h-25"><button (click)="addNum('1')" class="w-100 h-100 btn btn-danger">1</button></div>
+            <div class="h-25"><button (click)="addNum('00')" class="w-100 h-100 btn btn-danger">00</button></div>
+        </div>
+        <div class="col-3 bg-white">
+            <div class="bg-secondary bg-opacity-50"><button (click)="delete()" class="w-100 btn btn-outline-secondary text-light">DEL</button></div>
+            <div class="bg-secondary bg-opacity-50"><button (click)="addOperador('/')" class="w-100 btn btn-outline-secondary text-light">/</button></div>
+            <div class="bg-secondary bg-opacity-50"><button (click)="addOperador('*')" class="w-100 btn btn-outline-secondary text-light">X</button></div>
+            <div class="bg-secondary bg-opacity-50"><button (click)="addOperador('-')" class="w-100 btn btn-outline-secondary text-light">-</button></div>
+            <div class="bg-secondary bg-opacity-50"><button (click)="addOperador('+')" class="w-100 btn btn-outline-secondary text-light">+</button></div>
+            <div class="bg-secondary bg-opacity-50"><button (click)="evaluar()" class="w-100 btn btn-outline-secondary text-light">=</button></div>
+        </div>
+    </div>
+  </div>
+</div>
